@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Blox fruitID System</title>
+</head>
+<body class="bg-[#0D0D0D] text-white">
+    <div class="min-h-screen flex items-center justify-center">
+        <div class="w-full">
+            <div style="background:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://4kwallpapers.com/images/wallpapers/roronoa-zoro-5120x2880-12179.png) no-repeat center;background-size:cover"
+                class="py-52 px-4 md:px-8 text-center relative text-[#00FFFF] font-bold text-2xl md:text-3xl shadow-[0_0_20px_#39FF14]">
+                <h1 class="pb-4 text-[#39FF14]">ค้นหารหัสbloxfruit</h1>
+                <div class="w-11/12 md:w-3/4 lg:max-w-3xl mx-auto">
+                    <div class="xl:w-1/2 lg:w-[60%] sm:w-[70%] w-[90%] mx-auto flex gap-2 md:mt-6 mt-4">
+                        <input type="text" name="search" id="search" placeholder="ค้นหารหัสbloxfruitของคุณ. . . " 
+                               class="border border-[#39FF14] w-full p-3 rounded-md text-xl text-[#39FF14] placeholder-[#39FF14] bg-[#1A002B] focus:outline-none focus:ring-2 focus:ring-[#39FF14]" />
+                        <button type="submit" class="px-4 bg-gradient-to-r from-[#39FF14] to-[#00FFFF] text-lg text-[#0D0D0D] rounded-md font-semibold shadow-[0_0_10px_#39FF14] hover:shadow-[0_0_20px_#00FFFF] transition-transform transform hover:scale-105" onclick="handleSearch()">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    <div class="text-left mt-4 rounded-b-2xl shadow-[0_0_15px_#39FF14] bg-[#1A002B] divide-y divide-[#39FF14] w-full max-h-40 overflow-auto">
+                        <!-- Search results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button class="bg-gradient-to-r from-[#39FF14] to-[#00FFFF] text-[#0D0D0D] px-8 py-4 rounded-full text-lg font-bold shadow-[0_0_15px_#39FF14,0_0_30px_#00FFFF] transition-transform transform hover:scale-110 hover:shadow-[0_0_25px_#39FF14,0_0_50px_#00FFFF]" >
+                  <a href="Addbloxfruit.html">รับข้อมูลรหัสเพิ่ม <i class="fa-solid fa-user-plus ml-2"></i></a>
+                </button>
+            </div>
+
+            <div id="bloxfruit" class="mt-6 px-4"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/ิbloxfruit.js"></script>
+</body>
+</html>

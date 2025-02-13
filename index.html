@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="min-h-screen flex items-center justify-center w-full bg-[#0D0D0D] from-indigo-800 to-blue-900 dark:bg-gradient-to-r dark:from-gray-900 dark:to-gray-950 p-4">
+        <div class="bg-[#04374a] dark:bg-gray-900 shadow-2xl rounded-xl px-8 py-6 max-w-md w-full transform transition-all duration-300 hover:scale-[1.01] animate-fade-in border-4 border-[#00FFFF]">
+            <h1 class="text-3xl font-bold text-center mb-8 text-white dark:text-gray-200">Welcome Back!</h1>
+            <form action="#" class="space-y-6" id="loginForm">
+                <div>
+                    <label for="Username" class="block text-sm font-medium text-white dark:text-gray-300 mb-2">
+                        Username
+                    </label>
+                    <input 
+                        type="text" 
+                        id="email" 
+                        class="input input-bordered input-info shadow-sm rounded-lg w-full 0 transition-all duration-300" 
+                        placeholder="Enter your Username" 
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="password" class="block text-sm font-medium text-white dark:text-gray-300 mb-2">
+                        Password
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        class="input input-bordered input-info shadow-sm rounded-lg w-full 0 transition-all duration-300" 
+                        placeholder="Enter your password" 
+                        required
+                    >
+                     
+                </div>
+
+                 
+
+                <button 
+                    type="submit" 
+                    class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-medium text-white bg-[#49018c] hover:bg-[#294654] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-800 transform transition-all duration-300 hover:scale-[1.02] dark:ring-offset-gray-900"
+                    onclick="handleLogin(event)"
+                >
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/index.js"></script>
+</body>
+</html>

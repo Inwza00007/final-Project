@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>Home Page</title>
+</head>
+<body class="bg-black text-white min-h-screen">
+    <nav class="bg-animated cyber-grid fixed w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="#" class="text-2xl font-bold neon-text glitch-effect" data-text="PORAMIN">PORAMIN</a>
+                <ul class="flex items-center space-x-6">
+                    <li><a href="internet.html" class="nav-link" data-text="Internet Cafe "><i class="fa-solid fa-gamepad"></i>Internet Cafe</a></li>
+                    <li><a href="bloxfruit.html" class="nav-link" data-text="BloxFruit ID"><i class="fa-solid fa-skull-crossbones"></i>BloxFruit ID</a></li>
+                    <li><a href="#" class="nav-link" data-text="CheckJWT" id="checkJwtBtn">CheckJWT</a></li>
+                    <li><a href="#" class="bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold py-2 px-4 rounded hover:from-cyan-600 hover:to-blue-600 transition-all duration-300" id="logoutBtn">Logout<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <div class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to My Home Page</h1>
+            <p>This is my project CRUD.</p>
+        </div>
+    </main>
+    <script src="./script/home.js"></script>
+</body>
+</html>
